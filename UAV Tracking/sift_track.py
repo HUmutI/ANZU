@@ -1,3 +1,5 @@
+# SIFT Algorithm for Object Tracking
+
 # Import necessary libraries
 import cv2 
 import numpy as np

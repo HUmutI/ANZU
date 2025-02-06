@@ -1,10 +1,12 @@
+# ORB Algorithm for Object Tracking
+
 import cv2
 import matplotlib.pyplot as plt 
 import numpy as np
 import time
 
 # this is target image 
-image = cv2.imread("uav_zoom_2.png")
+image = cv2.imread("./photos/uav_zoom_2.png")
 gray_image = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
 rgb_image =cv2.cvtColor(image,cv2.COLOR_BGR2RGB)
 plt.imshow(rgb_image)
@@ -21,7 +23,7 @@ img2 = cv2.drawKeypoints(rgb_image,keypoints_1,None,color=(0,255,0), flags=0)
 plt.imshow(img2)
 
 # path to video  
-video_path="Drone Chasing edited.mp4"  
+video_path="./videos/Drone Chasing edited.mp4"  
 video = cv2.VideoCapture(video_path)
 
 # Initialize variables for FPS calculation
