@@ -2,3 +2,4 @@ data/
 yolo/yolo11n.pt
 yolo/datasets/
 yolo/runs/
+yolo/best.pt
