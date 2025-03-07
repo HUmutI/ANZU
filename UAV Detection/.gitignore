@@ -1,5 +1,3 @@
 data/
-yolo/yolo11n.pt
-yolo/datasets/
-yolo/runs/
-yolo/best.pt
+yolo/yolo11_models/
+datasets/

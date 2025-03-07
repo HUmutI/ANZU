@@ -1,12 +1,22 @@
 path: .
 train: train/images
-val: val/images
+val: valid/images
+test: test/images
 
 nc: 1  
 names: ["uav"]  
+
+augment: true
+hsv_h: 0.01  # Renk tonu değişikliği (hafif)
+hsv_s: 0.3   # Doygunluk değişikliği (hafif)
+hsv_v: 0.2   # Parlaklık değişikliği (hafif)
+flipud: 0.0  # Dikey çevirme (kapalı, Roboflow'da zaten uygulandıysa)
+fliplr: 0.5  # Yatay çevirme (yarı yarıya)
+mosaic: 0.5  # Mosaic artırma (hafif)
+mixup: 0.0   # Mixup artırma (kapalı)
+
 stats: true  
-augment: true  
-weighting: auto  
 rect: True 
 cache: True  
-mosaic: 1.0
+weighting: auto  
+img_size: 640
