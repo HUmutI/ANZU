@@ -1,3 +1,4 @@
 data/
 yolo/yolo11_models/
-datasets/
+yolo/datasets/
+yolo_test/
